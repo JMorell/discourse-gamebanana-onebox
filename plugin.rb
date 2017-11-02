@@ -13,6 +13,6 @@ class Onebox::Engine::GameBananaOnebox
 	end
 	
 	def to_html
-		"<a href=\"//gamebanana.com/#{category}/#{id}\"><img alt=\"Share banner\" src=\"//gamebanana.com/#{category}/embeddables/#{id}?type=large\"/></a>"
+		"<a target=\"_blank\" href=\"//gamebanana.com/#{category}/#{id}\"><img alt=\"Share banner\" src=\"//gamebanana.com/#{category}/embeddables/#{id}?type=large\"/></a>"
 	end
 end
