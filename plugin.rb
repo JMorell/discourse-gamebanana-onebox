@@ -1,3 +1,9 @@
+# name: Discourse GameBanana Onebox
+# about: Adds support for gamebanana maps and skins.
+# version: 1.0
+# authors: Jordi Morell
+# url: https://github.com/JMorell/discourse-gamebanana-onebox
+
 class Onebox::Engine::GameBananaOnebox
 	include Onebox::Engine
 
@@ -13,6 +19,6 @@ class Onebox::Engine::GameBananaOnebox
 	end
 	
 	def to_html
-		"<a target=\"_blank\" href=\"//gamebanana.com/#{category}/#{id}\"><img alt=\"Share banner\" src=\"//gamebanana.com/#{category}/embeddables/#{id}?type=large\"/></a>"
+		"<a href=\"//gamebanana.com/#{category}/#{id}\"><img alt=\"Share banner\" src=\"//gamebanana.com/#{category}/embeddables/#{id}?type=large\"/></a>"
 	end
 end
